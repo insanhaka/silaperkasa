@@ -1,0 +1,17 @@
+.container {
+    padding-top: 5%;
+}
+
+.form-regis {
+    width: 600px;
+    align-content: center;
+}
+
+.btn {
+    background-color: #3662c1;
+    color: #ffff;
+}
+.btn:hover {
+    color: #ffff !important;
+    text-decoration: none;
+}

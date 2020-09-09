@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css_frontend/home.css">
+
+    <!-- ti-Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/css/themify-icons.css">
+
+    <title>Home</title>
+  </head>
+  <body>
+    
+    <div class="container" id="content">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Formulir Permohonan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Draf</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Status</a>
+            </li>
+        </ul>
+
+        <!-- Content Formulir Start -->
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="card" id="formulir">
+                    <div class="card-header">
+                        <div class="row justify-content-md-center" id="card-header">
+                            <div class="col-md-2 offset-md-1">
+                                <img src="img/logo-kabupaten-tegal.png" alt="" width="60">
+                            </div>
+                            <div class="col-md-8 offset-md-1 align-middle">
+                                <h3 id="title">Formulir Permohonan Kerjasama</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Nama Instansi</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="Instansi pemohon">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Bentuk Instansi</label>
+                                <input type="text" class="form-control" id="inputPassword4" placeholder="Bentuk instansi">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAddress">Alamat</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="Alamat lengkap instansi">
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">No. Telp.</label>
+                                <input type="number" class="form-control" id="inputEmail4" placeholder="Nomor telepon aktif">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Alamat email aktif">
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="input">Jenis Permohonan</label>
+                                <select id="input" class="form-control">
+                                  <option selected>--Pilih--</option>
+                                  <option>KSDD</option>
+                                  <option>KSDPK</option>
+                                  <option>Dukungan Program Pemerintah Pusat</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Lampiran</label>
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="customFile">
+                                  <label class="custom-file-label" for="customFile">Choose file</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-row justify-content-end" id="button-form">
+                              <div class="col-md-1">
+                                <button type="submit" class="btn" id="btn-save">Save</button>
+                              </div>
+                              <div class="col-md-1">
+                                <button type="submit" class="btn btn-primary" id="btn-submit">Submit</button>
+                              </div>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Content Formulir End -->
+
+            <!-- Content Draf Start -->
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Nama Pembuat</th>
+                    <th scope="col">Jenis Permohonan</th>
+                    <th scope="col">Waktu Dibuat</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Junaidi</td>
+                    <td>KSDD</td>
+                    <td>09-09-2020 11.22</td>
+                    <td>
+                      <div class="row justify-content-center">
+                        <div class="col-md-3">
+                          <a href="" id="action" class="btn btn-warning"><span class="ti-pencil"></span> Edit</a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="" id="action" class="btn btn-danger"><span class="ti-trash"></span> Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Junaidi</td>
+                    <td>KSDPK</td>
+                    <td>09-09-2020 13.45</td>
+                    <td>
+                      <div class="row justify-content-center">
+                        <div class="col-md-3">
+                          <a href="" id="action" class="btn btn-warning"><span class="ti-pencil"></span> Edit</a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="" id="action" class="btn btn-danger"><span class="ti-trash"></span> Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Content Draf End -->
+
+            <!-- Content Status Start -->
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Nama Pembuat</th>
+                    <th scope="col">Jenis Permohonan</th>
+                    <th scope="col">Waktu Dibuat</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Junaidi</td>
+                    <td>KSDD</td>
+                    <td>09-09-2020 11.22</td>
+                    <td>
+                      <div class="d-inline p-2 bg-success text-white"><span class="ti-check-box"></span> Disetujui</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Junaidi</td>
+                    <td>KSDPK</td>
+                    <td>09-09-2020 13.45</td>
+                    <td>
+                      <div class="d-inline p-2 bg-info text-white"><span class="ti-reload"></span> Dalam Proses</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Content Status End -->
+
+
+          </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

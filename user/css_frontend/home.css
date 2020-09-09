@@ -1,0 +1,69 @@
+#content {
+    padding-top: 3%;
+}
+
+#formulir {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#card-header {
+    padding: 5px;
+}
+
+#title {
+    margin-top: 2%;
+}
+
+#button-form {
+    margin-top: 2%;
+}
+
+.btn {
+    margin-top: 3%;
+}
+
+#btn-save {
+    background-color: #dfe4ea;
+    color: #2f3542;
+    width: 80px;
+}
+
+#btn-submit {
+    background-color: #3662c1;
+    color: #ffff;
+    width: 80px;
+}
+
+#btn-save:hover {
+    color: #2f3542 !important;
+    text-decoration: none;
+}
+
+#btn-submit:hover {
+    color: #ffff !important;
+    text-decoration: none;
+}
+
+.nav-item a {
+    font-weight: bold;
+    color: #a4b0be;
+}
+
+form {
+    margin-bottom: 3%;
+}
+
+
+table {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#action {
+    text-decoration: none;
+}
+
+.d-inline {
+    border-radius: 20px;
+}
